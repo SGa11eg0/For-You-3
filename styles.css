@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+    color: white;
+  }
+  
+  /* Florecitas animadas */
+  .flower {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    opacity: 0.8;
+    animation: float 10s linear infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) rotate(0deg);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  
+  .cover {
+    text-align: center;
+  }
+  
+  .cover img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  }
+  
+  .audio-link {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .audio-link a {
+    color: #ff9bd4;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .lyrics {
+    white-space: pre-wrap;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-top: 30px;
+  }
